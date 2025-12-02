@@ -1,0 +1,815 @@
+ body { 
+            background: url("фон.png") no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        header {
+            padding: 10px 20px;
+            display: flex;
+            align-items: center; 
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        main {
+            height: auto;
+            position: relative;
+        }
+
+        .logo {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+            margin-right: auto;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin: 0 auto;
+        }
+                
+        .nav-link {
+            color: #000000;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+            background-color: #fff;
+            border-radius: 50px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            font-weight: 500;
+        }
+
+        .right-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-left: auto;
+        }
+
+        h2 {
+            display: flex;
+            align-items: start;
+            padding-left: 5%;
+        }
+
+        .cabinet {
+            color: #000000;
+            text-decoration: none;
+            background-color: #fff;
+            border-radius: 50px;
+            font-size: 24px;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-link:hover, .cabinet:hover {
+            background-color: #f60;
+        }
+
+        .search {
+            background: linear-gradient(to right, #ff6600, #5500FF);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+        }
+
+        .search:hover {
+            background: linear-gradient(to right, #f60, #5500FF);
+            transform: translateY(-2px);
+        }
+
+        .baner-container {
+            position: relative;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        .baner {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .baner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .baner-fhoto {
+            position: absolute;
+            left: 70px;
+            bottom: 50px;
+            z-index: 2;
+        }
+
+        .baner-fhoto img {
+            width: 250px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .baner-text {
+            position: absolute;
+            left: 375px;
+            bottom: 50px;
+            z-index: 2;
+            max-width: 500px;
+        }
+
+        .baner-text h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #fff;
+            font-weight: bold;
+            padding-left: 0;
+        }
+
+        .baner-text p {
+            margin-bottom: 15px;
+            color: #fff;
+            line-height: 1.5;
+            width: 100%;
+        }
+
+        .buy-ticket {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            display: inline-block;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .buy-ticket a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+        }
+
+        .buy-ticket:hover {
+            background-color: #ff6ce4;
+        }
+
+        .date-time-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            margin: 40px auto;
+            padding: 30px;
+            max-width: 800px;
+        }
+
+        .date-time {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .date-time p {
+            margin: 0;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .date-time input {
+            padding: 8px 12px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .amenities-container {
+            text-align: center;
+            margin: 80px auto;
+            padding: 50px 20px;
+        }
+
+        .amenities-container h3 {
+            margin-bottom: 50px;
+            font-size: 32px;
+            color: #fff;
+        }
+
+        .amenity {
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            flex-wrap: wrap;
+        }
+
+        .amenity-item {
+            text-align: center;
+            max-width: 150px;
+        }
+
+        .amenity-item img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        .amenity-item p {
+            color: #fff;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .movies-section {
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .movies-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+            color: #fff;
+            padding-left: 0;
+        }
+
+        .movies-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .next {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .next img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .card {
+            width: 250px;
+            margin: 10px;
+            background-color: #ff6600 !important;
+            border: none !important;
+            border-radius: 10px !important;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 20px !important;
+            text-align: center;
+        }
+
+        .card-title {
+            color: #fff !important;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            color: #fff !important;
+            margin: 0;
+        }
+
+        .carousel-section {
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .carousel-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+            color: #fff;
+            padding-left: 0;
+        }
+
+        .carousel-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .carousel {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+         /* Подвал */
+        .footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 50px 20px;
+            margin-top: 100px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .footer-title {
+            font-size: 28px;
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .footer-info p {
+            margin-bottom: 10px;
+            color: #b8b8b8;
+        }
+
+        .social-network {
+            width: 40px;
+            height: 40px;
+            margin: 10px 10px 0 0;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .social-network:hover {
+            transform: scale(1.1);
+        }
+
+        .newsletter-title {
+            margin-bottom: 20px;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .newsletter-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .footer-section-form {
+            background-color: rgba(85, 0, 255, 0.4);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .form-input {
+            padding: 12px 15px;
+            border: 1px solid #536488;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #ffffff;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .form-input::placeholder {
+            color: #a0a0a0;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            color: #b8b8b8;
+            font-size: 14px;
+        }
+
+        .checkbox-label input {
+            margin: 0;
+        }
+
+        .submit-btn {
+            padding: 12px 30px;
+            background: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background: #FF00C8;
+        }
+ /* Регистрация и авторизация*/
+ .registration-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 500px;
+            padding: 40px;
+            border-radius: 20px;
+            background-color: rgba(85, 0, 255, 0.504);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            margin-left: 30%;
+            margin-top: 3%;
+        }
+
+        .registration-login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        .registration-login .submit-btn {
+            flex: 1;
+            text-align: center;
+            padding: 12px 20px;
+            background: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .registration-login .submit-btn:hover {
+
+            transform: translateY(-2px);
+        }
+
+        #registrationForm {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-group input {
+            padding: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .form-group input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #ff6600;
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .checkbox {
+      display: flex;
+      gap: 10px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            margin-top: 3px;
+            transform: scale(1.2);
+        }
+
+        .checkbox-group label {
+            color: #fff;
+            font-size: 14px;
+            line-height: 1.4;
+            cursor: pointer;
+        }
+
+        .checkbox-group a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+
+        .checkbox-group a:hover {
+            text-decoration: underline;
+        }
+
+        #registrationForm .submit-btn {
+            padding: 15px 30px;
+            background:  #ff6600;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        #loginForm{
+             width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .forgot-password{
+            color: rgb(13, 110, 253)
+        }
+ /*подтверждение бронирования*/
+  .tikets-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    padding: 40px;
+    margin-left: 30%;
+    margin-top: 3%;
+    gap: 30px;
+  }
+   h1{
+        width: 1000px;
+       text-align: center;
+    }
+    
+    /*зал*/
+        .screen {
+            width: 80%;
+            height: 25px;
+            background: linear-gradient(90deg, #e0e0e0, #ffffff, #e0e0e0);
+            margin: 0 auto 40px auto;
+            border-radius: 8px;
+            position: relative;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+        .movie-details{
+            margin-left: 50px;
+        }
+
+        .screen::before {
+            content: 'ЭКРАН';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #333;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .seats-grid {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 8px;
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .row-label {
+            position: absolute;
+            left: -35px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .seat {
+            width: 28px;
+            height: 28px;
+            background: #4a4a4a;
+            border-radius: 6px 6px 3px 3px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        .seat:hover {
+           background: #ff6600; 
+            transform: scale(1.05);
+        }
+
+        /* Скрываем стандартный чекбокс */
+        .seat-input {
+            display: none;
+        }
+        .hall-container{
+            width: 500px;
+            padding: 20px;
+            background-color: rgba(85, 0, 255, 0.504);
+            height: 400px;
+            margin-top: 5%;
+        }
+        .paymenet{
+            display: flex;
+           gap: 90px;
+            justify-content: center;
+           
+        }
+        .price-info{
+            padding-top: 30px;
+        }
+
+     
+        .row-label span {
+            width: 25px;
+            height: 25px;
+            display: flex;
+            position: relative;
+            left: 15px;
+            align-items: center;
+            justify-content:center;
+        }
+
+        /*Личный кабинет*/
+        .bonus{
+            background-color: #ffffff;
+            width:100px;
+            color: #000000;
+        }
+        .cabinet-container{
+            margin-left:50px ;
+            padding: 20px;
+            h2{
+                position: relative;
+                right: 5%;
+
+            }
+
+        }
+    .booking-container{
+        margin-top: 40px;
+        width: 50%;
+        h3{
+           margin-left: 50px;
+        }
+        }
+        .booking-container .card{
+            position: relative;
+            right: 10%;
+        }
+    .history-container{
+     width: 90%;
+      h3{
+           margin-left: 50px;
+        }
+     }
+.history-container .card{
+    position: relative;
+            right: 4%;
+}
+
+/*Бронирование*/
+.movie-header{
+ display: flex;
+gap: 40px;
+justify-content: start;
+.text{
+    width: 250px;
+}
+  img{
+    width: 200px;}
+}
+.time{  
+ background: linear-gradient(to right, #ff6600, #5500FF);
+            color: #fff;
+            padding: 12px 30px;
+            margin: 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            display: inline-block;
+            font-weight: bold;
+            border: none;
+            text-align: center;
+}
+.time:hover{
+ transform: translateY(-5px);
+}
+.date-btn{
+     background-color: #ff6600;
+            color: #fff;
+            padding: 12px 30px;
+            margin: 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            display: inline-block;
+            font-weight: bold;
+            border: none;
+            text-align: center;
+}   
+.date-btn:hover{
+  background-color: #ff6ce4;
+}
+    /* =========================== */
+        /* АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ */
+        /* =========================== */
+
+        /* Планшеты (768px - 1024px) */
+        @media (max-width: 1024px) {
+            .baner-text {
+                left: 320px;
+                max-width: 450px;
+            }
+            
+            .baner-fhoto {
+                left: 50px;
+            }
+            
+            .baner-fhoto img {
+                width: 220px;
+                height: 310px;
+            }
+            
+            .nav-links {
+                gap: 15px;
+            }
+            
+            .nav-link {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+
+      
